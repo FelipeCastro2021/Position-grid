@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.stacked {
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+
+.stacked > * {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.stacked > .media {
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */
